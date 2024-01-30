@@ -8,7 +8,7 @@ case
 	when f.length > 120 then 'medium'
 	else 'long'
 end as length_lable,
-current_date as create_date,
+'2005-01-01' as create_date,
 '9999-12-31' as expired_date
 FROM public.film f 
 inner join public.film_category fc 

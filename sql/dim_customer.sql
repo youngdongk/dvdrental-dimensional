@@ -5,7 +5,7 @@ INSERT INTO public.dim_customer
 select c.customer_id, c.first_name, c.last_name, 
 c.first_name || ' ' || c.last_name as full_name,
 c.email,
-current_date as create_date,
+'2005-01-01' as create_date,
 '9999-12-31' as expire_date
 from public.customer c;
 
